@@ -61,7 +61,7 @@
   </head>
 
   <body>
-    <img src="logo-quiz-do-futuro.png"
+    <img src="logo-quiz-do-futuro.png">
 
     <div class="pergunta-1" onclick="checarResposta(event)">
       <h1>Para trabalhar com programação eu preciso:</h1>
@@ -116,7 +116,7 @@
         function checarResposta(event) {
           const tagDoElemento = event.target.tagName;
           if (tagDoElemento !=="button") {
-            return;
+          return;
           }
 
           const classeDoBotao = event.target.className;
@@ -157,7 +157,6 @@
 
           const divResultado = document.querySelector(".resultado");
             divResultado.classList.add("escondido");
-
           }
         }
     </script>
