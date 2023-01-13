@@ -115,7 +115,7 @@
 
         function checarResposta(event) {
           const tagDoElemento = event.target.tagName;
-          if (tagDoElemento !=="BUTTON") {
+          if (tagDoElemento !== "BUTTON") {
           return;
           }
 
@@ -141,21 +141,22 @@
           }
 
           const divProximaPergunta = document.querySelector(".pergunta-" + perguntaAtual);
-          divProximaPergunta.classList.remove("escondido");
+            divProximaPergunta.classList.remove("escondido");
           const textoPerguntaAtual = document.querySelector(".pergunta-atual");
-          textoPerguntaAtual.innerText = perguntaAtual;
+            textoPerguntaAtual.innerText = perguntaAtual;
+
 
           function voltarParaOFuturo() {
             quantidadeDeAcertos = 0;
             perguntaAtual = 1;
 
             const divProximaPergunta = document.querySelector(".pergunta-" + perguntaAtual);
-          divProximaPergunta.classList.remove("escondido");
+              divProximaPergunta.classList.remove("escondido");
 
             const textoPerguntaAtual = document.querySelector(".pergunta-atual");
-          textoPerguntaAtual.innerText = perguntaAtual;
+              textoPerguntaAtual.innerText = perguntaAtual;
 
-          const divResultado = document.querySelector(".resultado");
+            const divResultado = document.querySelector(".resultado");
             divResultado.classList.add("escondido");
           }
         }
